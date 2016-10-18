@@ -25,7 +25,7 @@ public class NameService {
         if (!val.validateFullNameHasNoIllegalChars(fullName)) {
             throw new IllegalCharException();
         } 
-        else if (names.length < 2){
+        else if (!val.validateFullNameHasMultipleParts(names)){
             throw new NameLengthException();
         }
         else {
