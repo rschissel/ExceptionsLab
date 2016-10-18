@@ -15,7 +15,7 @@ public class InputOutputGui {
         nameService = new NameService();
     }
 
-    public void startConversation(NameValidator val)throws Exception {
+    public final void startConversation(NameValidator val)throws Exception {
         
         String fullName = JOptionPane.showInputDialog("Enter full name:");
         String lastName = null;

@@ -9,7 +9,7 @@ package lab3;
  * @author Ryan Schissel
  */
 public class NameValidator {
-    public boolean validateFullNameHasNoIllegalChars(String input) {
+    public final boolean validateFullNameHasNoIllegalChars(String input) {
         String[] illegalChars = new String[]{"!", "@", "$", "%", "^", "*", "(", ")",
             "+", "[", "]", "{", "}", "|", "\'", "\"", "\\", "/", "<", ">", ".",
             ",", ":", ";"};
@@ -20,7 +20,7 @@ public class NameValidator {
         }
         return true;
     }
-    public boolean validateFullNameHasMultipleParts(String[] names){
+    public final boolean validateFullNameHasMultipleParts(String[] names){
         if (names.length > 2){
             return true;
         }
